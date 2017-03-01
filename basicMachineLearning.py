@@ -1,11 +1,12 @@
-This is a basic machine learning example. The key part is the concept of "gradient descent"/
+"""This is a basic machine learning example. The key part is the concept of "gradient descent"/
 
 * define a model : y = Wx + b
 * define error function (cost function)
 * computing of minimizing the error function (cost function)
 * iterately run
+"""
 
-```
+
 import tensorflow as tf
 import numpy as np
 
@@ -38,4 +39,4 @@ with tf.Session() as session:
 
     w_value = session.run(w)
     print("Predicted model: {a:.3f}x + {b:.3f}".format(a=w_value[0], b=w_value[1]))
-```
+
